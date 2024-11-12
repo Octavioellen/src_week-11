@@ -5,4 +5,6 @@ class Plan {
   final List<Task> tasks;
 
   const Plan({this.name = '', this.tasks = const []});
+int get completedCount => tasks
+
 }

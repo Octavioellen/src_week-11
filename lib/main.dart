@@ -10,7 +10,14 @@ class MasterPlanApp extends StatelessWidget {
   Widget build(BuildContext context) { 
     return MaterialApp( 
      theme: ThemeData(primarySwatch: Colors.purple), 
-     home: PlanScreen(), 
+     home: PlanProvider(
+      return MetrialApp (
+        theme: ThemeData(primarySwatch: Colors.purple),
+        home: PlanProvider(
+          notifier: ValueNotifier<Plan>(cont Plan()),
+        ),
+      );
+     ), 
     ); 
   } 
 } 
